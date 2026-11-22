@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="सुसमृद्ध नेपाल डिजाइन्स एण्ड कन्स्ट्रक्सन प्रा. लि. — Design, construction, interiors, renovation, retrofitting and waterproofing solutions.">
+  <title>सुसमृद्ध नेपाल | डिजाइन्स एण्ड कन्स्ट्रक्सन प्रा. लि.</title>
+  <style>
+    :root {
+      --navy:#10283f; --navy2:#173d59; --gold:#d5a441; --cream:#f5f3ee;
+      --ink:#1c2b36; --muted:#64727d; --white:#fff; --line:#e5e9ec;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);line-height:1.65}
+    a{text-decoration:none;color:inherit}
+    .topbar{background:var(--navy);color:#dce5eb;font-size:13px;padding:8px 6%;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #10283f12}
+    .nav{max-width:1180px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .mark{width:68px;height:58px;display:grid;place-items:center;flex:0 0 auto;overflow:hidden}
+    .mark img{width:100%;height:100%;object-fit:contain;display:block}
+    .brand strong{display:block;color:var(--navy);font-size:19px;line-height:1.3}
+    .brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.7px}
+    nav{display:flex;gap:23px;align-items:center;font-size:14px;font-weight:600}
+    nav a:hover{color:#b78325}
+    .nav-cta{background:var(--gold);color:var(--navy);padding:10px 17px;border-radius:5px}
+    .hero{min-height:570px;display:flex;align-items:center;color:white;position:relative;background:
+      linear-gradient(90deg,rgba(8,27,44,.91) 0%,rgba(8,27,44,.72) 48%,rgba(8,27,44,.18) 100%),
+      url('https://images.unsplash.com/photo-151181.h?auto=format&fit=crop&w=2000&q=85') center/cover,
+      linear-gradient(135deg,#173d59,#10283f)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,27,44,.24),transparent 45%);pointer-events:none}
+    .hero-inner{width:100%;max-width:1180px;margin:auto;padding:85px 24px;position:relative;z-index:1}
+    .eyebrow{color:#f0c66d;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+    h1{font-size:clamp(35px,5vw,62px);line-height:1.18;margin:18px 0 12px;max-width:760px}
+    .hero-nepali{font-size:clamp(18px,2.2vw,25px);font-weight:700;margin:0 0 12px}
+    .hero p{max-width:650px;color:#e2e9ee;font-size:17px;margin:0 0 28px}
+    .btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;padding:13px 22px;border-radius:4px;margin-right:10px}
+    .btn-outline{border:1px solid #ffffffa8;color:white;padding:12px 22px;border-radius:4px;display:inline-block;font-weight:700}
+    .service-strip{background:var(--navy);color:white;padding:17px 5%;text-align:center;font-size:12px;letter-spacing:1.2px;font-weight:700}
+    .service-strip span{color:var(--gold);padding:0 10px}
+    section{padding:82px 24px}
+    .container{max-width:1120px;margin:auto}
+    .section-label{color:#b78325;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h2{font-size:clamp(28px,3.5vw,39px);color:var(--navy);line-height:1.25;margin:9px 0 16px}
+    .intro{color:var(--muted);max-width:720px;margin:0 auto 38px}
+    .center{text-align:center}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+    .about-photo{min-height:365px;border-radius:8px;background:
+      linear-gradient(0deg,#10283f22,#10283f00),
+      url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85') center/cover;
+      box-shadow:18px 18px 0 var(--cream)}
+    .about-copy p{color:var(--muted)}
+    .values{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .pill{background:var(--cream);padding:9px 13px;border-left:3px solid var(--gold);font-size:13px;font-weight:700}
+    .services{background:var(--cream)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+    .card{background:white;padding:27px 24px;border:1px solid #ece9e1;border-radius:7px;transition:.2s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #10283f12}
+    .icon{width:45px;height:45px;border-radius:9px;background:#f7edda;color:#9a6b17;display:grid;place-items:center;font-size:22px;margin-bottom:17px}
+    .card h3{color:var(--navy);margin:0 0 8px;font-size:19px}
+    .card p{color:var(--muted);font-size:14px;margin:0}
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+    .project{min-height:235px;border-radius:7px;overflow:hidden;position:relative;background:#d8e0e5}
+    .project img{width:100%;height:100%;min-height:235px;object-fit:cover;display:block;transition:transform .4s}
+    .project:hover img{transform:scale(1.04)}
+    .project-label{position:absolute;bottom:0;left:0;right:0;padding:35px 18px 16px;color:white;font-weight:700;background:linear-gradient(transparent,#0a2035d9)}
+    .note{font-size:13px;color:var(--muted);margin-top:18px}
+    .cta{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;text-align:center}
+    .cta h2{color:white}.cta p{color:#d8e2e9;max-width:680px;margin:0 auto 25px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;margin-top:35px}
+    .contact-item{padding:15px 0;border-bottom:1px solid var(--line)}
+    .contact-item strong{display:block;color:var(--navy)}
+    .contact-item span{color:var(--muted);font-size:14px}
+    .contact-box{background:var(--cream);padding:28px;border-radius:8px}
+    .contact-box p{color:var(--muted);font-size:14px}
+    footer{background:#0b1e30;color:#cbd6de;padding:28px 24px;text-align:center;font-size:13px}
+    footer strong{color:white}
+    @media(max-width:800px){
+      .nav{align-items:flex-start}.nav nav{display:none}
+      .hero{min-height:520px}.about-grid,.contact-grid{grid-template-columns:1fr}
+      .cards,.projects-grid{grid-template-columns:repeat(2,1fr)}
+      .about-photo{min-height:280px}
+    }
+    @media(max-width:520px){
+      .topbar{justify-content:center;text-align:center}.brand strong{font-size:16px}
+      .cards,.projects-grid{grid-template-columns:1fr}
+      section{padding:62px 20px}.hero-inner{padding:70px 20px}
+      .service-strip{line-height:2.2}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>गुणस्तरीय निर्माण • प्राविधिक दक्षता • विश्वसनीय सेवा</div>
+    <div>सरकारी तथा निजी क्षेत्रका परियोजनाहरू</div>
+  </div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Susamriddha Nepal home">
+        <div class="mark"><img src="data:image/png;base64,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" alt="Susamriddha Nepal company logo"></div>
+        <div><strong>SUSAMRIDDHA NEPAL</strong><small>DESIGNS &amp; CONSTRUCTION PVT. LTD.</small></div>
+      </a>
+      <nav>
+        <a href="#home">गृहपृष्ठ</a><a href="#about">हाम्रो बारेमा</a><a href="#services">सेवाहरू</a>
+        <a href="#projects">परियोजनाहरू</a><a href="#contact" class="nav-cta">सम्पर्क</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">DESIGN • ENGINEERING • CONSTRUCTION</div>
+        <h1>Designing the Future.<br>Building with Trust.</h1>
+        <div class="hero-nepali">निर्माणमा गुणस्तर, सेवामा विश्वास।</div>
+        <p>डिजाइनदेखि निर्माणसम्म, इन्टेरियरदेखि नवीकरण तथा संरचना सुदृढीकरणसम्म — सरकारी तथा निजी क्षेत्रका लागि भरपर्दो निर्माण समाधान।</p>
+        <a class="btn" href="#services">हाम्रा सेवाहरू</a>
+        <a class="btn-outline" href="#contact">हामीसँग सम्पर्क गर्नुहोस्</a>
+      </div>
+    </section>
+    <div class="service-strip">DESIGN <span>◆</span> CONSTRUCTION <span>◆</span> INTERIORS <span>◆</span> RENOVATION <span>◆</span> RETROFITTING <span>◆</span> WATERPROOFING</div>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-photo" role="img" aria-label="Modern building architecture"></div>
+        <div class="about-copy">
+          <div class="section-label">ABOUT OUR COMPANY</div>
+          <h2>हाम्रो बारेमा</h2>
+          <p><strong>सुसमृद्ध नेपाल डिजाइन्स एण्ड कन्स्ट्रक्सन प्रा. लि.</strong> डिजाइन, इन्जिनियरिङ तथा निर्माणसम्बन्धी विविध सेवा प्रदान गर्ने कम्पनी हो।</p>
+          <p>सरकारी तथा निजी क्षेत्रका परियोजनाहरूमा गुणस्तरीय कार्यसम्पादन, प्राविधिक दक्षता, सुरक्षित निर्माण अभ्यास र सेवाग्राहीको आवश्यकतालाई प्राथमिकता दिँदै काम गर्ने हाम्रो प्रतिबद्धता छ।</p>
+          <p>हामी डिजाइन तथा निर्माणसँगै इन्टेरियर, नवीकरण, रेट्रोफिटिङ र वाटरप्रुफिङसम्बन्धी काममा पनि सेवा प्रदान गर्छौँ।</p>
+          <div class="values"><span class="pill">गुणस्तर</span><span class="pill">विश्वसनीयता</span><span class="pill">प्राविधिक दक्षता</span><span class="pill">दिगोपना</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container center">
+        <div class="section-label">WHAT WE DO</div>
+        <h2>हाम्रा सेवाहरू</h2>
+        <p class="intro">परियोजनाको आवश्यकता र प्रकृतिअनुसार डिजाइन, निर्माण तथा भवन सुधारका व्यावहारिक समाधानहरू।</p>
+        <div class="cards">
+          <article class="card"><div class="icon">⌂</div><h3>डिजाइन तथा इन्जिनियरिङ</h3><p>आर्किटेक्चरल, स्ट्रक्चरल तथा अन्य प्राविधिक डिजाइन र इन्जिनियरिङ सेवा।</p></article>
+          <article class="card"><div class="icon">▦</div><h3>निर्माण</h3><p>सरकारी तथा निजी क्षेत्रका भवन, सडक र विविध पूर्वाधार निर्माण कार्य।</p></article>
+          <article class="card"><div class="icon">▤</div><h3>इन्टेरियर</h3><p>आन्तरिक स्थानको योजना, डिजाइन, फिनिसिङ तथा कार्यान्वयन।</p></article>
+          <article class="card"><div class="icon">↻</div><h3>नवीकरण</h3><p>भवन तथा संरचनाको मर्मत, सुधार, पुनःव्यवस्थापन र पुनःस्थापना।</p></article>
+          <article class="card"><div class="icon">⌁</div><h3>रेट्रोफिटिङ</h3><p>विद्यमान संरचनाको क्षमता र कार्यसम्पादन सुधारका लागि सुदृढीकरण।</p></article>
+          <article class="card"><div class="icon">◒</div><h3>वाटरप्रुफिङ</h3><p>छत, टेरेस, बाथरुम, बेसमेन्ट तथा अन्य भागमा पानी चुहावट नियन्त्रणका समाधान।</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container center">
+        <div class="section-label">OUR PORTFOLIO</div>
+        <h2>हाम्रा परियोजनाहरू</h2>
+        <p class="intro">सरकारी तथा निजी क्षेत्रका सम्पन्न र सञ्चालनमा रहेका कामहरू यहाँ प्रस्तुत गरिनेछन्।</p>
+        <div class="projects-grid">
+          <div class="project"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80" alt="Construction site"><div class="project-label">निर्माण तथा पूर्वाधार</div></div>
+          <div class="project"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Modern building"><div class="project-label">भवन तथा वास्तुकला</div></div>
+          <div class="project"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Interior design"><div class="project-label">इन्टेरियर तथा नवीकरण</div></div>
+        </div>
+        <p class="note">नोट: यी तस्बिरहरू नमुना दृश्यका लागि राखिएका हुन्। वास्तविक परियोजनाका तस्बिर र विवरण उपलब्ध भएपछि प्रतिस्थापन गर्नुहोस्।</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="section-label">LET'S BUILD TOGETHER</div>
+        <h2>तपाईंको परियोजनाबारे छलफल गरौँ।</h2>
+        <p>नयाँ निर्माण, डिजाइन, इन्टेरियर, नवीकरण, रेट्रोफिटिङ वा वाटरप्रुफिङका लागि हामीसँग सम्पर्क गर्नुहोस्।</p>
+        <a class="btn" href="#contact">सम्पर्क गर्नुहोस्</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-label">GET IN TOUCH</div>
+        <h2>सम्पर्क गर्नुहोस्</h2>
+        <p class="intro" style="margin-left:0">हामीसँग आफ्नो आवश्यकता र परियोजनाबारे जानकारी साझा गर्नुहोस्।</p>
+        <div class="contact-grid">
+          <div>
+            <div class="contact-item"><strong>कम्पनी</strong><span>सुसमृद्ध नेपाल डिजाइन्स एण्ड कन्स्ट्रक्सन प्रा. लि.</span></div>
+            <div class="contact-item"><strong>फोन</strong><span>+9779860167753</span></div>
+            <div class="contact-item"><strong>इमेल</strong><span>Susamriddhanepal4@gmail.com</span></div>
+            <div class="contact-item"><strong>कार्यालय</strong><span>Tansen-3, Palpa</span></div>
+          </div>
+          <div class="contact-box">
+            <h3 style="color:var(--navy);margin-top:0">हामीलाई सम्पर्क गर्नुहोस्</h3>
+            <p>फोन, इमेल वा सामाजिक सञ्जालमार्फत सम्पर्क गरी आफ्नो परियोजनाको प्रारम्भिक जानकारी दिन सक्नुहुन्छ।</p>
+            <p><strong>सेवा क्षेत्र:</strong> सरकारी तथा निजी क्षेत्रका डिजाइन, निर्माण र भवन सुधारसम्बन्धी कार्यहरू।</p>
+            <a class="btn" href="mailto:">इमेल पठाउनुहोस्</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>सुसमृद्ध नेपाल डिजाइन्स एण्ड कन्स्ट्रक्सन प्रा. लि.</strong><br>
+    Designing the Future. Building with Trust.<br><br>
+    © <span id="year"></span> Susamriddha Nepal. All rights reserved.
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
